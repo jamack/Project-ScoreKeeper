@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Project - Score Keeper</string>
+    <string name="activity_main_team_name_a">Team A</string>
+    <string name="activity_main_team_name_b">Team B</string>
+    <string name="activity_main_starting_score">0</string>
+    <string name="activity_main_touchdown">Touchdown</string>
+    <string name="activity_main_point_after">point after</string>
+    <string name="activity_main_point_after_landscape">1-pt</string>
+    <string name="activity_main_2_point_conversion">2-pt conv</string>
+    <string name="activity_main_2_point_conversion_landscape">2-pts</string>
+    <string name="activity_main_field_goal">Field Goal</string>
+    <string name="activity_main_safety">safety</string>
+    <string name="activity_main_reset">reset</string>
+    <string name="activity_main_undo">undo</string>
+    <string name="main_activity_java_undo_no_scores">Nothing to undo!</string>
+    <string name="main_activity_java_undo_pushed_twice">Out of undos!</string>
+    <string name="activity_main_2_point_conversion_small_landscape">2-pt</string>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pexels_grass_139315"
+        android:tint="#1f000000" />
+
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/team1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1Name"
+                style="@style/teamName"
+                android:text="@string/activity_main_team_name_a" />
+
+            <TextView
+                android:id="@+id/team1Score"
+                style="@style/scoreBoard"
+                android:text="@string/activity_main_starting_score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team1Touchdown"
+                    style="@style/buttonScoreFull"
+                    android:onClick="team1Add6Points"
+                    android:text="@string/activity_main_touchdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team1PointAfter"
+                    style="@style/buttonScoreHalfL"
+                    android:onClick="team1Add1Point"
+                    android:text="@string/activity_main_point_after" />
+
+                <Button
+                    android:id="@+id/team1TwoPointConversion"
+                    style="@style/buttonScoreHalfR"
+                    android:onClick="team1Add2Points"
+                    android:text="@string/activity_main_2_point_conversion" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team1FieldGoal"
+                    style="@style/buttonScoreFull"
+                    android:onClick="team1Add3Points"
+                    android:text="@string/activity_main_field_goal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team1Safety"
+                    style="@style/buttonScoreFull"
+                    android:onClick="team1Add2Points"
+                    android:text="@string/activity_main_safety" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/verticalLine"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/white_line_vertical" />
+
+        <LinearLayout
+            android:id="@+id/team2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team2Name"
+                style="@style/teamName"
+                android:text="@string/activity_main_team_name_b" />
+
+            <TextView
+                android:id="@+id/team2Score"
+                style="@style/scoreBoard"
+                android:text="@string/activity_main_starting_score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team2Touchdown"
+                    style="@style/buttonScoreFull"
+                    android:onClick="team2Add6Points"
+                    android:text="@string/activity_main_touchdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team2PointAfter"
+                    style="@style/buttonScoreHalfL"
+                    android:onClick="team2Add1Point"
+                    android:text="@string/activity_main_point_after" />
+
+                <Button
+                    android:id="@+id/team2TwoPointConversion"
+                    style="@style/buttonScoreHalfR"
+                    android:onClick="team2Add2Points"
+                    android:text="@string/activity_main_2_point_conversion" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team2FieldGoal"
+                    style="@style/buttonScoreFull"
+                    android:onClick="team2Add3Points"
+                    android:text="@string/activity_main_field_goal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/team2Safety"
+                    style="@style/buttonScoreFull"
+                    android:onClick="team2Add2Points"
+                    android:text="@string/activity_main_safety" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/mainContent"
+        android:scaleType="fitXY"
+        android:src="@drawable/white_line_horizontal2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonReset"
+            style="@style/buttonResetUndo"
+            android:layout_marginLeft="16dp"
+            android:onClick="resetScores"
+            android:text="@string/activity_main_reset" />
+
+        <TextView
+            android:id="@+id/messageArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonUndo"
+            style="@style/buttonResetUndo"
+            android:layout_marginRight="16dp"
+            android:onClick="undoLastAction"
+            android:text="@string/activity_main_undo" />
+    </LinearLayout>
+
+</RelativeLayout>
